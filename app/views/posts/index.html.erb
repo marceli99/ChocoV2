@@ -1,0 +1,8 @@
+<%= link_to "Dodaj", new_post_path %> <br />
+<%= link_to "Strona główna", root_path %> <br />
+<% @posts.each do |post| %>
+<h5><%= post.title %></h5>
+  <p><%= post.content %></p>
+  <span><%= link_to "Zobacz więcej...", post_path(post.id) %></span>
+  <abbr><%= link_to "Usuń", post_path(post.id), method: :delete %></abbr>
+<% end %>

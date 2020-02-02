@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'application#index'
   # Admin #
   get 'admin/' => 'admin#index', as: :admin
+  resources :posts
 end
