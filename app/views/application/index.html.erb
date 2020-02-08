@@ -1,16 +1,8 @@
-<% if user_signed_in? %>
-  <li>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-  </li>
-<% else %>
-  <li>
-    <%= link_to('Login', new_user_session_path) %>
-  </li>
-<% end %>
-<%= link_to "Dodaj", new_post_path %>
 <% @posts.each do |post| %>
-  <h5><%= post.title %></h5>
+  <h2><%= link_to post.title, post_path(post.id) %></h2>
+  <p class="date"><%= post.created_at.strftime('%F') %></p>
   <p><%= post.content %></p>
-  <span><%= link_to "Zobacz więcej...", post_path(post.id) %></span>
-  <abbr><%= link_to "Usuń", post_path(post.id), method: :delete %></abbr>
+  <% if user_signed_in? %>
+    <%= link_to "Usuń", post_path(post.id), method: :delete %>
+  <% end %>
 <% end %>

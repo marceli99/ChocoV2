@@ -5,11 +5,33 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <nav>
+    <h1>Choco</h1>
+    <ul>
+      <li><%= link_to 'Strona główna', root_path %></li>
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to "Dodaj", new_post_path %>
+        </li>
+        <li>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to('Login', new_user_session_path) %>
+        </li>
+      <% end %>
+    </ul>
+    <div>
+    <%= link_to 'Powered by Choco', 'https://github.com/marceli99' %>
+    </div>
+  </nav>
+  <article>
     <%= yield %>
+  </article>
   </body>
 </html>
