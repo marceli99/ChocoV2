@@ -1,10 +1,9 @@
-<%= link_to "Dodaj", new_post_path %> <br />
-<%= link_to "Strona główna", root_path %> <br />
 <% @posts.each do |post| %>
-<h5><%= post.title %></h5>
-  <p><%= sanitize post.content %></p>
-  <span><%= link_to "Zobacz więcej...", post_path(post.id) %></span>
-  <% if user_signed_in? %>
-    <%= link_to "Usuń", post_path(post.id), method: :delete %>
-  <% end %>
+<h2><%= post.title %></h2>
+  <p><%= sanitize(post.content[0, 150], tags:[]) %>...</p>
+  <span class="panel">
+    <%= link_to "Zobacz więcej...", post_path(post.id) %>
+    <%= link_to "Usuń", post_path(post.id), method: :delete , class: 'right'%>
+  </span>
+  <hr>
 <% end %>
