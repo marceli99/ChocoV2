@@ -1,4 +1,2 @@
-<%= @post.id %>
-<%= @post.title %>
-<%= @post.content %>
-<%= link_to "Powrót", posts_path %>
+<h2><%= @post.title %></h2>
+<%= sanitize @post.content %>

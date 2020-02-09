@@ -7,7 +7,9 @@ class PostsController < ApplicationController
     @post = Post.new
   end
   def create
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::SmartyHTML)
     @post = Post.new(post_params)
+    @post.content = markdown.render(@post.content)
     @post.save
     redirect_to posts_path
   end
