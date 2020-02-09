@@ -1,3 +1,9 @@
 en:
   Title: "Title"
   Content: "Content"
+  home: "Home"
+  add: "Add new post"
+  posts: "Posts"
+  poweredbychoco: "Powered by Choco"
+  logout: "Logout"
+  login: "Login"

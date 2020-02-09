@@ -1,3 +1,9 @@
 pl:
   Title: "Tytuł"
   Content: "Treść"
+  home: "Strona główna"
+  add: "Dodaj nowy post"
+  posts: "Posty"
+  poweredbychoco: "Napędzane przez Choco"
+  logout: "Wyloguj"
+  login: "Zaloguj się"
