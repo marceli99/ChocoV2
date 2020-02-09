@@ -7,3 +7,5 @@ pl:
   poweredbychoco: "Napędzane przez Choco"
   logout: "Wyloguj"
   login: "Zaloguj się"
+  Login: "Login"
+  password: "Hasło"

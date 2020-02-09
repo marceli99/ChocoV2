@@ -124,7 +124,7 @@ a, li, p, pre {
     line-height: 1.8;
 }
 
-input[type=text], textarea, input[type=submit] {
+input[type=text], textarea, input[type=submit], input[type=email], input[type=password] {
     border: none;
     color: #000;
     border-bottom: 1px solid #ddd;

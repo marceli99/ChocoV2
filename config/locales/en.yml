@@ -7,3 +7,5 @@ en:
   poweredbychoco: "Powered by Choco"
   logout: "Logout"
   login: "Login"
+  Login: "Login"
+  password: "Password"
