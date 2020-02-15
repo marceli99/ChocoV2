@@ -191,7 +191,7 @@ hr {
 
 @font-face {
     font-family: Nunito;
-    src: url('../fonts/Nunito.ttf');
+    src: url('Nunito.ttf');
 }
 
 @media (max-width: 768px) {
