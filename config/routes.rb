@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'application#index'
-  # Admin #
-  get 'admin/' => 'admin#index', as: :admin
+  # Posts
   resources :posts
   as :user do
     get 'login/' => 'devise/sessions#new', as: :login
