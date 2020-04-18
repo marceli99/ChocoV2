@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-<h2><%= post.title %></h2>
+<h4><%= post.title %></h4>
   <p><%= sanitize(post.content[0, 150], tags:[]) %>...</p>
   <span class="panel">
     <%= link_to "Zobacz więcej...", post_path(post.id) %>
