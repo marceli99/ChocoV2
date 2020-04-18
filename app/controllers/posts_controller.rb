@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.content = markdown.render(@post.content)
     @post.save
-    redirect_to posts_path
+    redirect_to root_path
   end
   def destroy
     @post = Post.find(params[:id])
