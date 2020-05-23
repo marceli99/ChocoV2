@@ -4,6 +4,7 @@ pl:
   home: "Strona główna"
   add: "Dodaj nowy post"
   posts: "Posty"
+  settings: "Ustawienia"
   poweredbychoco: "Napędzane przez Choco"
   logout: "Wyloguj"
   login: "Zaloguj się"
