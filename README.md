@@ -5,4 +5,4 @@ Simple blog system. Still work in progress :smirk:
 ![main_page](http://wolf.bieda.it/1.png)
 
 ## Login page
-![login_page](http://wolf.bieda.it/1.png)
+![login_page](http://wolf.bieda.it/2.png)
