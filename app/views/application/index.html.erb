@@ -1,6 +1,7 @@
 <% @posts.each do |post| %>
   <h2><%= link_to post.title, post_path(post.id) %></h2>
-  <p class="date"><%= post.created_at.strftime('%F') %></p>
+  <small><%= post.created_at.strftime('%F') %></small>
+  <%= image_tag post.image if post.image.attached? %>
   <p><%= sanitize post.content %></p>
 <!--  TODO: // Add some like <hr> tag-->
 <% end %>
