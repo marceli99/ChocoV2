@@ -1,2 +1,4 @@
 <h2><%= @post.title %></h2>
+<small><%= @post.created_at.strftime('%F') %></small>
+<%= image_tag @post.image if @post.image.attached? %>
 <%= sanitize @post.content %>
