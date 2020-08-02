@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   root 'application#index'
   # Posts
   resources :posts
-  get 'settings', to: 'settings#settings'
-
   as :user do
     get 'login/' => 'devise/sessions#new', as: :login
   end

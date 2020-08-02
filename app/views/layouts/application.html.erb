@@ -21,9 +21,6 @@
           <%= link_to t('posts'), posts_path %>
         </li>
         <li>
-          <%= link_to t('settings'), settings_path %>
-        </li>
-        <li>
           <%= link_to(t('logout'), destroy_user_session_path, method: :delete) %>
         </li>
       <% end %>
