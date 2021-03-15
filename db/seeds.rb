@@ -11,3 +11,9 @@ user.email = 'admin@admin.admin'
 user.password = 'zaq1@WSX'
 user.password_confirmation = 'zaq1@WSX'
 user.save!
+
+post = Post.new
+post.content = 'Test #1'
+post.created_at = DateTime.new(2021, 1, 1, 0, 0)
+post.title = 'Test #1'
+post.save!
